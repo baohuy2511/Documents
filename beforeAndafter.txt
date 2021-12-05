@@ -1,0 +1,140 @@
+HTML
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Frontend</title>
+    <script
+      src="https://kit.fontawesome.com/653e9e7eac.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- <h2 class="title">Diep Bao Huy</h2>
+    <h3 class="line">
+      <span class="line-text">LTK12</span>
+    </h3>
+    <div class="icon">
+      <i class="fa fa-user icon-user"></i>
+    </div> -->
+  </body>
+</html>
+
+
+CSS
+
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+  overflow-y: hidden;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.6rem;
+  font-weight: normal;
+  height: 2000px;
+}
+body {
+  width: 100%;
+}
+img {
+  display: block;
+  max-width: 100%;
+}
+/* .title {
+  -webkit-background-clip: text;
+  background-clip: text;
+  background-image: linear-gradient(to right, #373b44, #4286f4);
+  color: transparent;
+  display: inline-block;
+  left: 50%;
+  margin-top: 2rem;
+  position: relative;
+  transform: translateX(-50%);
+}
+.title:before {
+  background-color: red;
+  border-radius: 50%;
+  content: "";
+  display: inline-block;
+  height: 1rem;
+  left: -9%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 1rem;
+}
+.title:after {
+  background-color: red;
+  border-radius: 50%;
+  content: "";
+  height: 1rem;
+  position: absolute;
+  right: -9%;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 1rem;
+}
+.line {
+  margin-top: 4rem;
+  position: relative;
+  text-align: center;
+}
+.line:after {
+  background: linear-gradient(to right, #fdeff9, #ec38bc, #7303c0, #03001e);
+  content: "";
+  height: 3px;
+  left: 0;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+}
+.line-text {
+  background-color: white;
+  padding: 1rem;
+  position: relative;
+  z-index: 2;
+}
+.icon-user {
+  text-align: center;
+}
+.icon {
+  border-radius: 4px;
+  color: orange;
+  height: 5rem;
+  margin: 5rem auto;
+  position: relative;
+  text-align: center;
+  width: 5rem;
+}
+.icon:after {
+  background-color: currentColor;
+  border-radius: inherit;
+  content: "";
+  height: 100%;
+  left: 0;
+  opacity: 0.25;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+.icon-user {
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+} */

@@ -1,0 +1,14 @@
+display: flex (dùng cho phần tử cha khi đó sẽ css thẳng trực tiếp đến các phần tử con)
+
+flex-direction: row (mặc định tức là sẽ theo chiều ngang)
+flex-direction: row-reverse (chiều ngang nhưng sẽ theo chiều ngc lại)
+
+align-item: stretch ( mặc định sẽ làm các cột cao bằng nhau theo chiều dọc)
+align-items: baseline (canh theo đít chữ của dòng đầu tiên)
+
+justify-content: center || space-around || space-between || space-evenly
+
+flex-wrap: nowrap (mặc định sẽ không cho các phần tử rớt xuống hàng )
+
+order
+

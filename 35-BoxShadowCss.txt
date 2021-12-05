@@ -1,0 +1,1 @@
+box-shadow: x, y, blur scale color;

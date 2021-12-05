@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Frontend</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+      integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="/faviconForMyWeb.png" type="image/png" />
+  </head>
+  <body>
+    <div class="work">
+      <h2 class="work__heading">Our Works</h2>
+      <div class="work__filter">
+        <ul class="work-tab">
+          <li class="work-tab__item">All</li>
+          <li class="work-tab__item">Illustration</li>
+          <li class="work-tab__item">Website</li>
+          <li class="work-tab__item">UI & UX</li>
+          <li class="work-tab__item">Logo</li>
+        </ul>
+        <a href="#" class="work__all">View all</a>
+      </div>
+      <ul class="work__list">
+        <li class="work__item">
+          <img
+            src="https://images.unsplash.com/photo-1593642634524-b40b5baae6bb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1332&q=80"
+            alt=""
+            class="work__image"
+          />
+        </li>
+        <li class="work__item">
+          <img
+            src="https://images.unsplash.com/photo-1586227740560-8cf2732c1531?ixlib=rb-1.2.1&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1261&q=80"
+            alt=""
+            class="work__image"
+          />
+        </li>
+        <li class="work__item">
+          <img
+            src="https://images.unsplash.com/photo-1633114127408-af671c774b39?ixlib=rb-1.2.1&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+            alt=""
+            class="work__image"
+          />
+        </li>
+        <li class="work__item">
+          <img
+            src="https://images.unsplash.com/photo-1633113089631-6456cccaadad?ixlib=rb-1.2.1&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+            alt=""
+            class="work__image"
+          />
+        </li>
+      </ul>
+    </div>
+  </body>
+</html>
+
+
+SASS
+
+$green-color: #00c899;
+@mixin size($width, $height: $width) {
+  width: $width;
+  height: $height;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.6rem;
+  font-weight: normal;
+}
+.work {
+  max-width: 1200px;
+  padding: 2rem;
+  margin: 0 auto;
+  &__heading {
+    color: #1a0a3b;
+    font-weight: 500;
+    text-transform: capitalize;
+    font-size: 2.5rem;
+    position: relative;
+    padding-bottom: 1.5rem;
+    margin-bottom: 3rem;
+    &:before {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      @include size(3rem, 6px);
+      border-radius: 4px;
+      background-color: $green-color;
+    }
+  }
+  &__filter {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+  }
+  &-tab {
+    display: flex;
+    &__item {
+      cursor: pointer;
+      padding: 1rem 1.5rem;
+      border: 1px solid $green-color;
+      text-align: center;
+      border-radius: 2rem 0 2rem 2rem;
+      transition: all 0.2s linear;
+      &:not(:first-child) {
+        margin-left: 1rem;
+      }
+      &:hover {
+        color: white;
+        background-color: $green-color;
+      }
+    }
+  }
+  &__all {
+    display: inline-block;
+    color: $green-color;
+    border-radius: 6px;
+    font-size: 1.4rem;
+    padding: 5px 1rem;
+    background-color: rgba($color: $green-color, $alpha: 0.25);
+  }
+  &__list {
+    display: flex;
+    margin-left: -1.5rem;
+  }
+  &__item {
+    width: calc(25% - 1.5rem);
+    border-radius: 6px;
+    overflow: hidden;
+    margin-left: 1.5rem;
+  }
+  &__image {
+    @include size(100%);
+    object-fit: cover;
+  }
+}
+@media screen and (max-width: 767px) {
+  .work {
+    &__item {
+      width: 100%;
+    }
+    &__filter {
+      flex-direction: column;
+    }
+    &-tab {
+      flex-wrap: wrap;
+      justify-content: center;
+      &__item {
+        margin-bottom: 1.5rem;
+      }
+    }
+  }
+}
+@media screen and (max-width: 1023px) {
+  .work {
+    &__item {
+      width: calc(50% - 1.5rem);
+      margin-bottom: 1.5rem;
+    }
+    &__list {
+      margin-top: 2rem;
+    }
+  }
+}
+@media screen and (max-width: 1279px), (min-width: 1024px) {
+  .work {
+    display: none;
+  }
+}

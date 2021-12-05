@@ -1,0 +1,136 @@
+HTML
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Frontend</title>
+    <script
+      src="https://kit.fontawesome.com/653e9e7eac.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="circle"></div>
+      <i class="far fa-envelope icon-letter"></i>
+      <h1 class="title">Get the invite</h1>
+      <p class="text">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam
+        viverra orci ut.
+      </p>
+      <input type="email" id="email" placeholder="Enter Email" />
+      <button id="btn-skyblue">REQUEST INVITE</button>
+    </div>
+  </body>
+</html>
+
+
+CSS
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-family: "Poppins", sans-serif;
+  font-size: 62.5%;
+}
+body {
+  height: 100vh;
+  width: 100%;
+  font-size: 1.6rem;
+}
+img {
+  display: block;
+  max-width: 100%;
+}
+:root {
+  --bg: #f2f2f2;
+  --primary: #70cbce;
+  --btn: #fff;
+  --linear1: #2193b0;
+  --linear2: #6dd5ed;
+}
+.container {
+  background-color: var(--bg);
+  height: 50rem;
+  left: 50%;
+  position: relative;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 87rem;
+}
+.icon-letter {
+  color: var(--primary);
+  font-size: 2.5rem;
+  left: 50%;
+  position: absolute;
+  top: 15%;
+  transform: translate(-50%, -15%);
+}
+.circle {
+  border-radius: 50%;
+  border: 3px solid var(--primary);
+  height: 6rem;
+  left: 50%;
+  position: absolute;
+  top: 12.5%;
+  transform: translate(-50%, -12.5%);
+  width: 6rem;
+}
+.title {
+  position: absolute;
+  left: 50%;
+  top: 33%;
+  transform: translate(-50%, -33%);
+  font-size: 3.5rem;
+  font-weight: 600;
+  word-spacing: 0.3rem;
+}
+.text {
+  text-align: center;
+  padding-top: 22rem;
+  opacity: 0.7;
+}
+#email {
+  width: 36rem;
+  height: 6rem;
+  position: absolute;
+  left: 50%;
+  top: 60%;
+  transform: translate(-50%, -60%);
+  border-radius: 5px;
+  border: 4px none transparent;
+  font-size: 1.5rem;
+  font-weight: 600;
+  opacity: 0.7;
+  padding-left: 1.5rem;
+}
+#btn-skyblue {
+  width: 18.5rem;
+  height: 6rem;
+  color: var(--btn);
+  background-color: var(--primary);
+  border-radius: 5px;
+  border: 4px none transparent;
+  font-weight: 600;
+  position: absolute;
+  left: 50%;
+  top: 78%;
+  transform: translate(-50%, -78%);
+}
+#btn-skyblue:hover {
+  background-image: linear-gradient(to right, var(--linear1), var(--linear2));
+}

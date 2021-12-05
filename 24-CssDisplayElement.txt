@@ -1,0 +1,3 @@
+text-decoration: none;//bỏ dòng gạch chân
+display: inline-block;//sự kết hợp giữa thẻ inline và thẻ block mục đích để chuyển thẻ inline thành thẻ block vì thẻ inline bị hạn chế về CSS
+display: none;//không hiển thị trên web nhưng khi F12 vẫn hiển thị thẻ html

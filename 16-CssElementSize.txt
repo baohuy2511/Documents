@@ -1,0 +1,9 @@
+- Muốn hiện màu của background cần phải xét witdh và height cho trang web
+
+- Khi văn bản trong vùng bị tràn thì sử dụng thuộc tính (overflow: hidden;)
+- Mặc định sẽ luôn là: overflow-x: auto; overflow-y: auto;
+overflow-y: xuất hiện scroll theo chiều dọc
+
+- Khi văn bản dài ra ta cũng muốn height tự động cao lên thì ta dùng thuộc tính (min-height)
+- Khi muốn giới hạn height thì ta dùng thuộc tính (max-height)
+- Tương tự cho witdh

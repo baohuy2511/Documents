@@ -1,0 +1,195 @@
+HTML
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Frontend</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <script src="main.js"></script>
+    <div class="btn--green">sucess</div>
+    <div class="btn--blue">information</div>
+    <div class="btn--purple">buy now</div>
+    <div class="btn--orange">warning</div>
+    <div class="btn--red">contact</div>
+    <div class="btn--pink">delete</div>
+    <h1 class="text">TEXT</h1>
+    <ul>
+      <p>Neue Haas Unica font family</p>
+      <li>item</li>
+      <li>item</li>
+      <li>item</li>
+    </ul>
+    <div>
+      <a href="https://google.com">google.com</a>
+    </div>
+
+    <div>
+      <a href="vnexpress.vn">facebook.com</a>
+    </div>
+
+    <div data-name="hello">hello</div>
+
+    <div data-name="againhello">again hello</div>
+
+    <input type="email" name="email" />
+
+    <input type="text" name="fullname" />
+    <div class="color__item">fwefew</div>
+  </body>
+</html>
+
+
+
+CSS
+:root {
+  --first1: #67eaad;
+  --first2: #55d3c1;
+  --second1: #a5dffd;
+  --second2: #77baee;
+  --third1: #afb7fd;
+  --third2: #ac8bf2;
+  --four1: #fec98a;
+  --four2: #fda867;
+  --fifth1: #fab19f;
+  --fifth2: #ee7b77;
+  --sixth1: #fc9faf;
+  --sixth2: #f6879f;
+  --bodycolor: grey;
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+img {
+  display: block;
+  max-width: 100%;
+}
+body {
+  background-color: var(--bodycolor);
+  font-family: "Poppins", sans-serif;
+  font-size: 3rem;
+  font-style: normal;
+}
+.btn--green {
+  background-image: linear-gradient(to right, var(--first1), var(--first2));
+  border-radius: 8px;
+  box-shadow: -1px 7px 20px var(--first1);
+  color: white;
+  height: 6rem;
+  padding-top: 5px;
+  text-align: center;
+  width: 17rem;
+}
+.btn--blue {
+  width: 20rem;
+  text-align: center;
+  padding-top: 5px;
+  margin: 0 auto;
+  margin-bottom: 1rem;
+  margin-top: 30px;
+  height: 6rem;
+  color: white;
+  box-shadow: -1px 7px 20px var(--second1);
+  border-radius: 8px;
+  background-image: linear-gradient(to right, var(--second1), var(--second2));
+}
+.btn--purple {
+  background-image: linear-gradient(to right, var(--third1), var(--third2));
+  border-radius: 8px;
+  box-shadow: -1px 7px 20px var(--third1);
+  color: white;
+  height: 6rem;
+  margin-left: auto;
+  padding-top: 0.8rem;
+  text-align: center;
+  width: 20rem;
+}
+.btn--orange {
+  height: 6rem;
+  width: 20rem;
+  background-image: linear-gradient(to right, var(--four1), var(--four2));
+  padding-top: 0.7rem;
+  text-align: center;
+  color: white;
+  box-shadow: -1px 7px 20px var(--four1);
+  border-radius: 8px;
+}
+.btn--red {
+  margin: 0 auto;
+  width: 20rem;
+  height: 6rem;
+  background-image: linear-gradient(to right, var(--fifth1), var(--fifth2));
+  border-radius: 8px;
+  color: white;
+  text-align: center;
+  padding-top: 0.8rem;
+  box-shadow: -1px 7px 20px var(--fifth1);
+}
+.btn--pink {
+  width: 20rem;
+  height: 6rem;
+  color: white;
+  border-radius: 8px;
+  box-shadow: -1px 7px 20px var(--sixth1);
+  text-align: center;
+  margin-top: 1rem;
+  background-image: linear-gradient(to right, var(--sixth1), var(--sixth2));
+  padding: 0.8rem;
+  margin-left: auto;
+}
+.text {
+  -webkit-background-clip: text;
+  background-clip: text;
+  background-image: linear-gradient(to right, #ffc071, #ff3a99);
+  color: transparent;
+  display: inline-block;
+  font-weight: bold;
+  font-size: 10rem;
+}
+p {
+  color: hsl(350, 82%, 56%);
+}
+
+li:last-child {
+  color: rgb(37, 194, 227);
+}
+li:first-of-type {
+  color: #a5f;
+}
+li:nth-child(3) {
+  color: turquoise;
+}
+p:hover {
+  color: gold;
+  transition: 3s ease;
+}
+li:nth-of-type(1):hover {
+  color: darkgreen;
+  transition: 2s linear;
+}
+li:nth-of-type(2):hover {
+  color: deeppink;
+  transition: 1s ease;
+}
+li:nth-of-type(3):hover {
+  color: greenyellow;
+  transition: 0.5s linear;
+}
+a[href^="https"] {
+  color: green;
+}
+a[href$=".vn"] {
+  color: yellow;
+}

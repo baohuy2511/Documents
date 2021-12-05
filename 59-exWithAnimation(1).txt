@@ -1,0 +1,34 @@
+html
+<div class="fade-loading"></div>
+css
+.fade-loading {
+  width: 5rem;
+  height: 5rem;
+  background-color: violet;
+  margin: 5rem auto;
+  border-radius: 50%;
+  position: relative;
+  /* transform: scale(2);
+  opacity: 0; */
+}
+.fade-loading:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: inherit;
+  border-radius: inherit;
+  animation: fade 1s forwards normal infinite linear;
+}
+@keyframes fade {
+  from {
+    transform: scale(1);
+    opacity: 1;
+  }
+  to {
+    transform: scale(2);
+    opacity: 0;
+  }
+}

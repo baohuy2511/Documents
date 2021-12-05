@@ -1,0 +1,131 @@
+HTML
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Frontend</title>
+    <script
+      src="https://kit.fontawesome.com/653e9e7eac.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="boxed">Standard Web Learning</div>
+      <h1 class="title">VESTIBULUM ULLAMCORPER UT LEO QUIS</h1>
+      <p class="first-text">
+        Aenean facilisis lectus ante, ut rutrum eros convallis et.<br />
+        Vestibulum ullamcorper ut leo quis tristique. Donec in erat commodo,
+        pharetra purus ac,<br />consectetur lacus. Suspendisse odio sapien,
+        egestas at ex sit amet, molestie sagittis est.
+      </p>
+      <p class="second-text">
+        In id purus imperdiet nisl accumsan scelerisque. Donec nec justo sed
+        enim dapibus <br />
+        rhoncus. Morbi sed elit vitae metus ullamcorper efficitur.
+      </p>
+      <p class="final-text">
+        Fusce aliquam magna id ipsum ultricies interdum. Maecenas nibh risus.
+      </p>
+      <button class="btn-detail">DETAIL</button>
+    </div>
+  </body>
+</html>
+
+
+
+CSS
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-family: "Poppins", sans-serif;
+  font-size: 62.5%;
+}
+body {
+  height: 100vh;
+  width: 100%;
+  font-size: 1.6rem;
+  background-color: #191a2e;
+}
+img {
+  display: block;
+  max-width: 100%;
+}
+.container {
+  width: 108rem;
+  height: 44.5rem;
+  background-color: white;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.boxed {
+  width: 30rem;
+  height: 40rem;
+  background-color: #cccccc;
+  position: absolute;
+  top: 8%;
+  left: 3%;
+  transform: translate(-5%, -5%);
+  text-align: center;
+  padding-top: 18rem;
+  color: white;
+  font-size: 2.5rem;
+  font-weight: 300;
+}
+.title {
+  position: absolute;
+  right: 7%;
+  top: 7%;
+  transform: translate(1%, -8%);
+  font-weight: 500;
+}
+.first-text {
+  position: absolute;
+  top: 20%;
+  right: 2%;
+}
+.second-text {
+  position: absolute;
+  top: 45%;
+  right: 6%;
+}
+.final-text {
+  position: absolute;
+  top: 65%;
+  right: 14.5%;
+}
+.btn-detail {
+  width: 12rem;
+  height: 4rem;
+  position: absolute;
+  bottom: 7%;
+  left: 35%;
+  border-radius: 4px;
+  border: 3px solid;
+  background-color: #fff;
+  font-weight: 500;
+  font-size: 1.6rem;
+}
+.btn-detail {
+  transition: all 0.2s linear;
+}
+.btn-detail:hover {
+  color: #78ffd6;
+  background-image: linear-gradient(to right, #009fff, #ec2f4b);
+}

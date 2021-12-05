@@ -1,0 +1,52 @@
+---------------------------Font thường sử dụng---------------------------(chỉ cần copy và dán vào phần head của file html)
+<link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+
+- Một số thuộc tính để sử dụng font trong CSS
+- Để áp dụng nó thì phải để thuộc tính CSS trong thẻ body
+
+font-family: "Poppins", sans-serif;//để vào phần css body để có font này
+font-weight: x;//điều chỉnh độ dày đậm của chữ
+font-style: ;//để chính chữ thành bold, italic, ...
+
+line-height: 1;//khoảng cách giữa các dòng và mặc định là 1
+text-align: left;//vị trí của các dòng chữ, mặc định là left, muốn ra giữa thì sẽ là center
+text-align: justify;//canh đều 2 bên của các dòng chữ
+letter-spacing: 0px;//điều chỉnh khoảng cách giữa các ký tự, mặc định sẽ là 0px
+word-spacing: ...px;//điều chỉnh khoảng cách giữa các từ
+white-space: nowrap;//hiển thị các chữ trên 1 hàng và không bị xuống hàng
+
+/* HIển thị dấu ... trên 1 hàng */
+
+overflow: hidden;
+text-overflow: ellipsis
+
+/* Hiển thị dấu ... nhưng đến hàng thứ n mới làm */
+
+display: -webkit-box;
+-webkit-box-orient: vertical;
+-webkit-line-clamp: số dòng(n);
+overflow: hidden;
+text-overflow: ellipsis;
+
+=> Khi làm như này ta phải bỏ đi thuộc tính white-space: nowrap; vì nếu không sẽ bị lỗi vì cả 2 đều không thể cùng hiển thị
+
+/* Khi chữ quá nhiều muốn xuống hàng nhưng không bị bể web và xuất hiện scroll ngang */
+
+word-break: break-all;//rớt dòng nhưng là từ ngẫu nhiên không có ý nghĩa
+word-break: break-word;//rớt dòng nhưng sẽ là từ có nghĩa
+
+
+
+
+
+
+
+
+
+
+
+
+
+

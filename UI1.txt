@@ -1,0 +1,141 @@
+HTML
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Frontend</title>
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+      integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="dropdown">
+      <div class="dropdown__select">
+        <i class="fa fa-file dropdown__icon"></i>
+        <span class="dropdown__text">File type</span>
+        <i class="fa fa-caret-down dropdown__caret"></i>
+      </div>
+      <ul class="dropdown__list">
+        <li class="dropdown__item">
+          <i class="fa fa-file dropdown__icon"></i>
+          <span class="dropdown__text">Markup HTML</span>
+        </li>
+        <li class="dropdown__item">
+          <i class="fa fa-file dropdown__icon"></i>
+          <span class="dropdown__text">Photoshop PDF</span>
+        </li>
+        <li class="dropdown__item">
+          <i class="fa fa-file dropdown__icon"></i>
+          <span class="dropdown__text">Illustrater AI</span>
+        </li>
+        <li class="dropdown__item">
+          <i class="fa fa-file dropdown__icon"></i>
+          <span class="dropdown__text">Sketch .Sketch</span>
+        </li>
+      </ul>
+    </div>
+  </body>
+</html>
+
+
+SASS
+
+
+$blue-color: #42a7fe;
+@mixin size($width, $height: $width) {
+  width: $width;
+  height: $height;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.6rem;
+  font-weight: normal;
+  background-color: #f3faff;
+}
+.dropdown {
+  width: 40rem;
+  margin: 2rem auto 0;
+  position: relative;
+  &__select {
+    padding: 2rem 2.5rem 2rem 4rem;
+    background-color: $blue-color;
+    color: white;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+  &__text {
+    margin-left: 3.5rem;
+  }
+  &__caret {
+    margin-left: auto;
+  }
+  &__item {
+    padding: 2rem 2.5rem 2rem 4rem;
+    display: flex;
+    align-items: center;
+    color: #b3bbce;
+    transition: all 0.2s linear;
+    cursor: pointer;
+    border-left: 3px solid transparent;
+    &:not(:last-child) {
+      border-bottom: 1px solid #eee;
+    }
+    &:hover {
+      color: #74809d;
+      border-left-color: $blue-color;
+    }
+  }
+  &__list {
+    border-radius: 4px;
+    box-shadow: 0 0 1rem 0 rgba($color: black, $alpha: 0.1);
+    position: absolute;
+    background-color: white;
+    left: 0;
+    top: 100%;
+    width: 100%;
+    margin-top: 3rem;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.25s linear;
+    &:before {
+      content: "";
+      position: absolute;
+      @include size(2rem);
+      right: 2rem;
+      top: 0;
+      background-color: wheat;
+      transform: translateY(-50%) rotate(45deg);
+      border-radius: 3px;
+      z-index: -1;
+    }
+    &:after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      @include size(100%, 3rem);
+      background-color: transparent;
+      transform: translateY(-100%);
+    }
+  }
+  &:hover {
+    .dropdown__list {
+      display: block;
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+}

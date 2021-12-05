@@ -1,0 +1,17 @@
+box-sizing: content-box;
+/* witdh = witdh + padding-left + padding-right + border-left + border-right 
+
+   height = height + padding-top + padding-bottom + border-top + border-bottom
+*/
+
+/*
+   border-box
+   witdh = witdh - padding-left - padding-right - border-left - border-right 
+   height = height - padding-top - padding-bottom - border-top - border-bottom
+*/
+
+- Nên setup border-box từ ban đầu
+
+* {
+    box-sizing: border-box;
+}

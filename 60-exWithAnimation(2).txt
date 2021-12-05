@@ -1,0 +1,34 @@
+html 
+<div class="circles">
+      <div class="circle-item"></div>
+      <div class="circle-item"></div>
+    </div>
+
+css
+.circles {
+  text-align: center;
+  margin: 5rem;
+  animation: loading 1s infinite;
+}
+@keyframes loading {
+  50% {
+    transform: rotate(200deg);
+  }
+  75% {
+    transform: rotate(160deg);
+  }
+  100% {
+    transform: rotate(180deg);
+  }
+}
+.circle-item {
+  width: 3rem;
+  height: 3rem;
+  border: 3px solid purple;
+  display: inline-block;
+  border-radius: 3rem;
+  margin: 0 0.5rem;
+}
+.circle-item:first-child {
+  border-color: cyan;
+}

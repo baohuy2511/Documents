@@ -1,0 +1,4 @@
+witdh: 100 vw;//vw: view-witdh
+height: 100 vh;//vh: view-height
+=> Khi ta muốn xem với kích thước full nhưng không có scroll 
+đơn vị % chỉ phụ thuộc vào phần tử chứa nó còn vw vh chỉ quan tâm về %tầm nhìn của ta

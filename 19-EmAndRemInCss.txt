@@ -1,0 +1,5 @@
+- Mặc định nếu font-size: 100% = 16px; thì 1em = 1rem = 16px
+- em là đơn vị sẽ phụ thuộc vào thuộc tính font-size của chính nó hoặc của phần tử chứa nó
+- rem là đơn vị sẽ phụ thuộc vào font-size chỉ của thẻ html(hay còn gọi là thẻ root)
+- Để dễ sử dụng đơn vị rem thì ta cần phải đổi đơn vị font-size của thẻ html về cơ số 10 cho tiện trong việc tính toán
+- Vậy nếu muốn dễ sử dụng đơn vị rem ta nên xét font-size của thẻ html là 62.5% vì lúc này 1rem = 10px

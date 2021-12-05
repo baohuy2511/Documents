@@ -1,0 +1,3 @@
+supports (-webkit-background-clip: text) {
+	...
+}

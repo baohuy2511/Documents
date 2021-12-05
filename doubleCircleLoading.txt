@@ -1,0 +1,96 @@
+HTML
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Frontend</title>
+    <script
+      src="https://kit.fontawesome.com/653e9e7eac.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="ring">
+      <div class="ring1"></div>
+      <div class="ring2"></div>
+    </div>
+  </body>
+</html>
+
+
+
+CSS
+
+
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+  overflow-y: hidden;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.6rem;
+  font-weight: normal;
+  height: 2000px;
+}
+body {
+  width: 100%;
+}
+img {
+  display: block;
+  max-width: 100%;
+}
+.ring {
+  width: 70rem;
+  height: 70rem;
+  position: relative;
+}
+.ring1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50px;
+  height: 50px;
+  border-radius: 100rem;
+  border: 5px solid #6a5af9;
+  border-right: 5px solid transparent;
+  border-left: 5px solid transparent;
+  animation: spinner1 1s infinite linear forwards;
+}
+.ring2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100px;
+  height: 100px;
+  border-radius: 100rem;
+  border: 5px solid #6a5af9;
+  border-right: 5px solid transparent;
+  border-left: 5px solid transparent;
+  animation: spinner2 1s infinite linear forwards;
+}
+@keyframes spinner1 {
+  to {
+    transform: translate(-50%, -50%) rotate(-360deg);
+  }
+}
+@keyframes spinner2 {
+  to {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}

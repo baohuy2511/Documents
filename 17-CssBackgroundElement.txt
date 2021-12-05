@@ -1,0 +1,9 @@
+background-image: url("address");//chèn hình ảnh vào trang web. Khi muốn hiện ta vẫn phải xét witdh và height cho background-image!
+
+background-position: center center;//khi muốn hình ảnh nằm ở trung tâm web
+
+background-size: cover;//khi muốn phủ hết khung hình cho chúng ta
+
+background-repeat: no repeat;//khi chúng ta sử dụng hình ảnh có kích thước nhỏ thì web mặc định lặp lại nên nếu không muốn thì hãy sử dụng
+
+background-attachment: fixed;//khi ta muốn scroll nhưng hình ảnh vẫn đứng yên 

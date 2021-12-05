@@ -1,0 +1,2 @@
+object-fit: cover;//khi thu nhỏ hình ảnh thì nó sẽ được scale sao cho ảnh không bị móp méo
+object-position: ;//cho xem ảnh theo vị trí mong muốn

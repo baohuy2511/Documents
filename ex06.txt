@@ -1,0 +1,152 @@
+HTML
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Frontend</title>
+    <script
+      src="https://kit.fontawesome.com/653e9e7eac.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h2 class="title">
+        <span class="line">MY PORTFOLIO</span>
+      </h2>
+      <div class="menu">
+        <span class="menu__item">All</span>
+        <span class="menu__item">Web App</span>
+        <span class="menu__item">UI/UX</span>
+        <span class="menu__item">Graphics Design</span>
+        <span class="menu__item">Mobile App</span>
+        <span class="menu__item">Branding</span>
+        <span class="menu__item">Marketing</span>
+      </div>
+      <div class="boxed">
+        <span class="boxed__item">Học Web Chuẩn</span>
+        <span class="boxed__item">Học Web Chuẩn</span>
+        <span class="boxed__item">Học Web Chuẩn</span>
+      </div>
+    </div>
+  </body>
+</html>
+
+
+CSS
+
+/* CSS reset */
+html {
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  font-size: 62.5%;
+}
+body {
+  height: 100vh;
+  width: 100%;
+  font-size: 1.6rem;
+  background-color: #191a2e;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+input,
+textarea,
+select,
+button {
+  outline: none;
+}
+input {
+  line-height: normal;
+}
+label,
+button {
+  cursor: pointer;
+}
+a {
+  text-decoration: none;
+}
+img {
+  display: block;
+  max-width: 100%;
+}
+/* CSS for HTML */
+:root {
+  --background: #fff;
+  --titleBackground: #339999;
+  --menu: #737373;
+  --menu__first: #7dbdbd;
+  --boxed__background: #9acc78;
+  --boxed__color: #fff;
+}
+.container {
+  width: 79rem;
+  height: 75rem;
+  background-color: var(--background);
+  margin: 0 auto;
+}
+.title {
+  font-weight: 600;
+  font-size: 2.2rem;
+  display: inline-block;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 1.4rem;
+}
+.title:after {
+  content: "";
+  width: 40%;
+  height: 3px;
+  background-color: var(--titleBackground);
+  position: absolute;
+  top: 120%;
+  left: 40%;
+  transform: translate(-30%, -115%);
+}
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10rem;
+  margin-top: 5rem;
+}
+.menu__item {
+  font-size: 1.5rem;
+  color: var(--menu);
+  font-weight: 600;
+}
+.menu__item:first-child {
+  color: var(--menu__first);
+}
+.boxed {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 0 4rem;
+}
+.boxed__item {
+  width: 20rem;
+  height: 15rem;
+  background-color: var(--boxed__background);
+  text-align: center;
+  margin-top: 2rem;
+  color: var(--boxed__color);
+  padding-top: 6.5rem;
+}

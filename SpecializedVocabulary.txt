@@ -1,0 +1,99 @@
+Smartphone: điện thoại thông minh
+Information Technology: công nghệ thông tin
+Application: ứng dụng
+Mobile app: ứng dụng dành cho điện thoại di động
+Data: dữ liệu
+Application data management: quản lý dữ liệu ứng dụng
+Database: cơ sở dữ liệu
+Database administration system : hệ quản trị cơ sở dữ liệu
+Hardware: phần cứng
+Computer hardware maintenance: bảo trì phần cứng máy tính
+Software:phần mềm
+Computer software configuration item: mục cấu hình phần mềm máy tính
+Network: mạng
+Internal network connection: kết nối mạng cục bộ
+Peripheral: thiết bị ngoại vi
+Intelligent peripheral: thiết bị ngoại vi thông minh
+Component: thành phần
+Data component: thành phần dữ liệu
+Program: chương trình
+Program language: ngôn ngữ lập trình
+Open source: mã nguồn mở
+Open source software: phần mềm mã nguồn mở
+Bug: lỗi
+End user: người dùng cuối
+Interface:giao diện
+Feature: tính năng
+To add product feature: thêm tính năng sản phẩm
+Execute: chạy, thực thi
+To execute many programs at once: chạy nhiều chương trình cùng một lúc
+Abort: hủy
+Cancel: xóa hủy
+Network error: lỗi mạng
+Compatible: tương thích
+Compression:nén
+File compression tool: công cụ nén tập tin
+Format: định dạng
+Invalid date format: định dạng ngày không hợp lệ
+Operating system:hệ điều hành
+Virtual: ảo
+In- game virtual items: các vật ảo trong trò chơi
+Multitasking: đa nhiệm
+Log on/ log in: đăng nhập
+Log out/ log off: đăng xuất
+Support: hỗ trợ
+Remote support: hỗ trợ từ xa
+Upgrade: nâng cấp
+Update: cập nhật
+Hyperlink: siêu liên kết
+Filter: bộ lọc, lọc
+Index: các chỉ mục,lập chỉ mục
+Upload: tải lên
+Download: tải xuống, tải về
+E – commerce: thương mại điện tử
+E – commerce website: trang web thương mại điện tử
+Emoticon ( emotion icon): biểu tượng cảm xúc
+HTML( Hypertext Markup Language): ngôn ngữ đánh dấu siêu văn bản
+HTML tag: thẻ HTML
+HTML Editor: trình chỉnh sửa HTML
+Link: đường liên kết
+Sponsored link: liên kết được tài trợ
+Property: thuộc tính
+Session: phiên
+Set up: thiết lập, cài đặt
+Access: truy cập
+Unauthorized access: truy cập trái phép
+Full screen: toàn màn hình
+Syntax: cú pháp
+Procedural language: ngôn ngữ thủ tục
+Object – oriented language: ngôn ngữ hướng đối tượng
+Compiler: trình biên dịch
+Interpreter: trình thông dịch
+Authenticate: xác thực
+Encryption: mã hóa
+Firewall: tường lửa
+Protocol: giao thức
+Touchscreen: màn hình cảm ứng
+Touchscreen phone: điện thoại màn hình cảm ứng
+Interact: tương tác
+Limit: giới hạn
+Character limit: giới hạn ký tự
+Merge: kết hợp,hợp nhất
+Split: chia tách
+Theme: chủ đề
+Publish: xuất bản
+Debug: gỡ lỗi
+Modify: sửa đổi
+Deploy: triển khai
+Exceed: vượt quá
+Visible: hiển thị, có thể nhìn thấy được
+Invisible: không hiển thị được,không nhìn thấy được
+Import: nhập
+Export: xuất
+Convert: chuyển đổi
+Instruction: hướng dẫn
+Memory: bộ nhớ
+Digital: kỹ thuật số
+Binary: nhị phân
+Equipment: thiết bị
+Attach: đính kèm

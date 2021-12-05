@@ -1,0 +1,112 @@
+HTML
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Frontend</title>
+    <script
+      src="https://kit.fontawesome.com/653e9e7eac.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section>
+      <div class="image">
+        <img src="images/Ex-01.png" alt="" />
+      </div>
+    </section>
+    <section>
+      <div class="best-shared">
+        <h2>Best <strong>Shared Hosting </strong>Company</h2>
+        <p>
+          With this responsive landing page template, you can promote your all
+          hosting, domain and email services.
+        </p>
+      </div>
+    </section>
+    <section>
+      <div class="btn-list">
+        <ul>
+          <li>View Plans</li>
+          <li>All Features</li>
+        </ul>
+      </div>
+    </section>
+  </body>
+</html>
+
+
+CSS
+
+
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+  overflow-y: hidden;
+}
+body {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.6rem;
+  font-weight: normal;
+  height: 2000px;
+}
+body {
+  width: 100%;
+}
+img {
+  display: block;
+  max-width: 100%;
+}
+.image {
+  margin: 2rem auto;
+  width: 20rem;
+  height: 5rem;
+}
+.best-shared {
+  text-align: center;
+  padding-top: 1.6rem;
+  min-width: 10rem;
+  height: 2rem;
+  margin-bottom: 5rem;
+}
+.best-shared h2 {
+  font-weight: 200;
+  font-size: 4rem;
+}
+.best-shared h2 strong {
+  color: #5dcbf5;
+  font-weight: 900;
+}
+p {
+  margin-top: 2rem;
+}
+.btn-list {
+  text-align: center;
+}
+.btn-list li {
+  display: inline-block;
+  margin: 7rem 1.2rem;
+  width: 16.8rem;
+  height: 5.2rem;
+  background-color: black;
+  color: white;
+  border-radius: 5px;
+  line-height: 3.1;
+}
+.btn-list li:hover {
+  background-color: red;
+}
+

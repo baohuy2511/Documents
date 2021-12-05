@@ -1,0 +1,10 @@
+.pseudo:hover {
+  color: ;
+}
+//khi rê chuột vô và muốn nó đổi sang màu mong muốn
+
+
+.pseudo:active {
+  color: ;
+}
+//khi nhấn vào sẽ đổi màu theo mong muốn

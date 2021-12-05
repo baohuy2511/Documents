@@ -1,0 +1,18 @@
+- Mặc định các khối luôn nằm về sát lề phía trên bên trái của web
+
+margin: ;
+- Th1: chỉ để 1 giá trị thì có nghĩa là top = right = left = bottom
+- Th2: để 2 giá trị thì có nghĩa là top = bottom = giá trị 1, right = left = giá trị 2
+- Th3: để 3 giá trị thì có nghĩa là top = giá trị 1, right = left = giá trị 2, bottom = giá trị 3
+- Th4: đầy đủ 4 số thì có nghĩ là theo thứ tự kim đồng hồ bắt đầu từ top-right-bottom-left
+
+- Mặc định block luôn nằm bên trái nhưng nếu muốn nó nằm bên phải thì ta sử dụng thuộc tính (margin-left: auto;)
+
+- Nếu muốn block ra giữa thì ta kết hợp 2 thuộc tính margin-left và margin-right auto ( hoặc margin: 0 auto;)
+
+- Chú ý chỉ sử dụng được cho thẻ block còn thẻ inline thì không được 
+
+/* margin collapse: khi phần tử phía trên có margin bottom và phần tử phía dưới có margin top thì phần tử nào có giá trị lớn hơn sẽ lấy phần tử đó */
+
+Padding (inner spacing: khoảng cách bên trong)
+- Cách sử dụng như margin nhưng margin có thể sử dụng giá trị âm còn padding thì không

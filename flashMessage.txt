@@ -1,0 +1,121 @@
+HTML
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Frontend</title>
+    <script
+      src="https://kit.fontawesome.com/653e9e7eac.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="flash__list">
+      <div class="flash__item">
+        <i class="fa fa-check flash__icon"></i>
+        <h3 class="flash__title">
+          Success. You can go further with your dream
+        </h3>
+        <button class="btn btn--primary">Get on</button>
+      </div>
+      <div class="flash__item">
+        <i class="fa fa-check flash__icon flash__icon--secondary"></i>
+        <h3 class="flash__title">
+          Success. You can go further with your dream
+        </h3>
+        <button class="btn btn--secondary">Get on</button>
+      </div>
+    </div>
+  </body>
+</html>
+
+
+
+CSS
+
+
+
+* {
+  box-sizing: border-box;
+}
+img {
+  display: block;
+  max-width: 100%;
+}
+html {
+  font-size: 62.5%;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  align-items: center;
+  background-color: #c1e8ff;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  width: 100%;
+}
+:root {
+  --gutter: 3rem;
+  --primary: #f00;
+  --secondary: #07a787;
+}
+.flash__item {
+  background-color: white;
+  padding: 3rem 1.5rem;
+  border-radius: 4px;
+  text-align: center;
+  margin-left: var(--gutter);
+}
+.flash__icon {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 5rem;
+  background-color: var(--primary);
+  color: white;
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 2rem;
+}
+.flash__icon--secondary {
+  background-color: var(--secondary);
+}
+.flash__title {
+  font-size: 1.6rem;
+  margin-bottom: 3rem;
+  line-height: 1.8;
+}
+.btn {
+  cursor: pointer;
+  outline: none;
+  padding: 1rem 3rem;
+  color: white;
+  text-align: center;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  border: 0;
+  border-radius: 4px;
+}
+.btn--primary {
+  background-color: var(--primary);
+}
+.btn--secondary {
+  background-color: var(--secondary);
+}
+.flash__list {
+  display: flex;
+  padding: 0 var(--gutter);
+  margin-left: calc(-1 * var(--gutter));
+}

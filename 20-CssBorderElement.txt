@@ -1,0 +1,5 @@
+border: 2px solid black;
+/* border-witdh, border-style, border-color */
+
+border-radius: 10px;// bo tròn 4 góc 10px
+border-radius: 50%;//bo thành hình tròn
