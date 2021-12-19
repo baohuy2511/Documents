@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Website</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="title">
+        Learn more about beautiful furniture web design combinations
+      </h1>
+      <div class="boxed">Standard Web Learning</div>
+      <h2 class="review">
+        Today furniture website design. we will teach you how to find
+        professional materials for your
+      </h2>
+      <p class="text">
+        Curabitur ut eros orci. Mauris non egestas sem. Fusce mattis tortor sit
+        amet blandit sodales. Nam finibus faucibus ante ut pulvinar.
+        Pellentesque vitae sagittis dolor. Mauris auctor risus eu eros ornare,
+        in pellentesque purus elementum. Etiam efficitur tempor justo. Nullam
+        vel ante sapien.
+      </p>
+      <button id="btn--green">Read More</button>
+    </div>
+  </body>
+</html>
+
+
+
+
+
+
+
+:root {
+  --body__bgc: #000;
+  --container__bgc: #fff;
+  --boxed__bgc: #cccccc;
+  --text__color: #adadad;
+  --btn__bgc: #01bacf;
+  --btn__hover-color: rebeccapurple;
+}
+html {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+input,
+textarea,
+select,
+button {
+  outline: none;
+}
+input {
+  line-height: normal;
+}
+label,
+button {
+  cursor: pointer;
+}
+a {
+  text-decoration: none;
+}
+img {
+  display: block;
+  max-width: 100%;
+}
+li {
+  list-style: none;
+}
+
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: normal;
+  font-size: 1.6rem;
+  width: 100%;
+  height: 100vh;
+  background-color: var(--body__bgc);
+  overflow-y: hidden;
+}
+.container {
+  width: 70rem;
+  height: 75rem;
+  margin: 0 auto;
+  background-color: var(--container__bgc);
+}
+.title {
+  font-weight: 600;
+  font-size: 2.5rem;
+  padding-left: 2rem;
+  padding-top: 1.5rem;
+  padding-bottom: 2rem;
+}
+.boxed {
+  width: 65.4rem;
+  height: 37.3rem;
+  font-size: 5rem;
+  background-color: var(--boxed__bgc);
+  color: var(--container__bgc);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: calc((70rem - 65.4rem) / 2);
+  font-weight: 300;
+  margin-bottom: 2.4rem;
+}
+.review {
+  font-weight: 600;
+  font-size: 2rem;
+  padding-left: 2rem;
+  padding-bottom: 1rem;
+}
+.text {
+  color: var(--text__color);
+  padding-left: 2rem;
+}
+#btn--green {
+  background-color: var(--btn__bgc);
+  color: var(--container__bgc);
+  width: 14.1rem;
+  height: 4.1rem;
+  border: none;
+  margin-left: 2rem;
+  margin-top: 1.5rem;
+  font-weight: 600;
+  transition: all 0.2s linear;
+}
+#btn--green:hover {
+  color: var(--btn__hover-color);
+}
